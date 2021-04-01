@@ -114,6 +114,7 @@ img {
 .nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: fixed;
 
     top: 0;
@@ -125,7 +126,7 @@ img {
     z-index: 10;
 }
 
-.nav-list {
+.nav li {
     display: flex;
     margin-right: 2rem;
 }
@@ -135,17 +136,39 @@ img {
         justify-content: center;
     }
 
-    .nav-list {
+    .nav li {
         margin: 0 1rem;
     }
 }
 
-.nav-list a {
+.nav li a {
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
 }
 
-.nav-list a:hover {
+.nav li a:hover {
     background: var(--main-blue);
 }
+
+/* Welcome section */
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+}
+
